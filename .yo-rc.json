@@ -1,0 +1,45 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.tonels.demo3",
+      "nativeLanguage": "zh-cn"
+    },
+    "jhipsterVersion": "6.2.0",
+    "applicationType": "monolith",
+    "baseName": "demo1",
+    "packageName": "com.tonels.demo3",
+    "packageFolder": "com/tonels/demo3",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NTk5MDYwNzZmNmI5NGQ1NWE2NGVmMWRkYTI1YjA2NDQ2ODYwMjg3ZWY5YTg2YWJjODY1NThjNDNhZDNmODllYzRiYTQ4ZWEyYTBkNGU4ZGM0NDllY2Q4MzYxY2QxNWQwMWJkNzcwMGU3OGE1OGE4NWJhODBhNTE1MDk3ZDRjZmU=",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "journal",
+    "clientThemeVariant": "light",
+    "testFrameworks": [
+      "gatling"
+    ],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "zh-cn",
+    "languages": [
+      "zh-cn"
+    ],
+    "blueprints": []
+  }
+}
