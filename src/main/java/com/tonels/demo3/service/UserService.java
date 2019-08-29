@@ -152,7 +152,7 @@ public class UserService {
         user.setActivated(true);
         if (userDTO.getAuthorities() != null) {
             Set<Authority> authorities = userDTO.getAuthorities().stream()
-                .map(authorityRepository::findById)
+                .map(id -> authorityRepository.findById(id))
                 .filter(Optional::isPresent)
                 .map(Optional::get)
                 .collect(Collectors.toSet());
@@ -218,7 +218,7 @@ public class UserService {
                 log.debug("Changed Information for User: {}", user);
                 return user;
             })
-            .map(UserDTO::new);
+            .map(user1 -> new UserDTO(user1));
     }
 
     public void deleteUser(String login) {

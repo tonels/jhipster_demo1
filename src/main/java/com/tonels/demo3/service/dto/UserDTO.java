@@ -1,14 +1,12 @@
 package com.tonels.demo3.service.dto;
 
 import com.tonels.demo3.config.Constants;
-
-import com.tonels.demo3.domain.Authority;
 import com.tonels.demo3.domain.User;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
-
-import javax.validation.constraints.*;
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
 import java.time.Instant;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -71,7 +69,7 @@ public class UserDTO {
         this.lastModifiedBy = user.getLastModifiedBy();
         this.lastModifiedDate = user.getLastModifiedDate();
         this.authorities = user.getAuthorities().stream()
-            .map(Authority::getName)
+            .map(authority -> authority.getName())
             .collect(Collectors.toSet());
     }
 
